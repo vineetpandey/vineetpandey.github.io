@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
+
+site_name: My Security Docs
+site_url: https://vineetpandey.github.io
+site_author: you
+site_description: Just Sharing!
+
+nav:
+  - Home: index.md
+  - About: about.md
+  
+  
+theme:
+  name: material
+  highlightjs: true
+  hljs_languages:
+    - yaml
+  
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+# (Search Plugin and associated features)
+
+plugins:
+  - search
+
+search:
+  boost: 2 
+
+
+# Document title
+
+
+
