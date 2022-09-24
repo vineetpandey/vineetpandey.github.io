@@ -6,26 +6,57 @@ site_description: Just Sharing!
 nav:
   - Home: index.md
   - About: about.md
-  
+  - Tutorial:
+      - Tutorial Subsection: "pages/tutorial/tutorial_subsection.md"
   
 theme:
   name: material
-  
-  
+  palette: 
+    primary: green
+    scheme: default
+    accent: indigo
+    
+# (Search Plugin and associated features)  
   features:
     - search.suggest
     - search.highlight
     - search.share
-# (Search Plugin and associated features)
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
 
 plugins:
-  - search
+  - search 
+    
 
-search:
-  boost: 2 
+
+extra_javascript:
+  - https://unpkg.com/mermaid@8.5.0/dist/mermaid.min.js
+
+extra_css:
+  - https://use.fontawesome.com/releases/v5.13.0/css/all.css
 
 
 # Document title
 
-
+markdown_extensions:
+  - admonition
+  
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true 
+      
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+  
+  - pymdownx.smartsymbols
+  - toc:
+      # insert a blank space before the character
+      permalink: " ¶"
+  
 
