@@ -18,6 +18,7 @@ jobs:
                 mkdocs-awesome-pages-plugin 
 
       - run: pip install mkdocs-material-extensions
+      - run: mkdocs build
       - run: mkdocs gh-deploy --force --clean --verbose
       
 
