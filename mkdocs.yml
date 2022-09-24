@@ -61,4 +61,17 @@ markdown_extensions:
       # insert a blank space before the character
       permalink: " ¶"
   
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/vineetiiitalld
+      name: Follow me up
+    
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/vineetpandeyalld
+      name: Let's Connect
 
+    - icon: fontawesome/brands/github
+      link: https://github.com/vineetpandey
+      name: Check out repos
