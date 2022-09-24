@@ -1,4 +1,4 @@
-name: Publish mkdocs material CI
+name: Publish My Pages
 on:
   push:
     branches:
