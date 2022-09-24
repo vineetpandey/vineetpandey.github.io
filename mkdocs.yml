@@ -1,6 +1,3 @@
-# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
-
-
 site_name: My Security Docs
 site_url: https://vineetpandey.github.io
 site_author: you
@@ -13,9 +10,7 @@ nav:
   
 theme:
   name: material
-  highlightjs: true
-  hljs_languages:
-    - yaml
+  
   
   features:
     - search.suggest
