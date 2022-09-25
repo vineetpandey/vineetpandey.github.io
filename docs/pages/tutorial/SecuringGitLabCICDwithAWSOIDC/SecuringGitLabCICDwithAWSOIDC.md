@@ -155,7 +155,7 @@ script:
 
 
 ## Conclusion
-By configuring the OIDC rightly and can now run Terraform script and other activities in the AWS account from GitLab.
+By configuring the short-lived credentials, now we don’t have to worry about the rotation and security of statically stored AWS credentials. And should be able to carry out the necessary activities such as running Terraform scripts, etc. in the AWS account from GitLab.
 
 On high level, there are 5 major steps for OIDC configuration that we have to carry out -
 >
@@ -166,3 +166,8 @@ On high level, there are 5 major steps for OIDC configuration that we have to ca
 4. Configure the trust relationship in the role so as to restrict the unintended access
 5. Finally configure the OIDC role in GitLab and retrieve the temporary set of credentials to perform actions
 ```
+
+## References
+* [https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html)
+* [https://docs.gitlab.com/ee/ci/cloud_services/aws/](https://docs.gitlab.com/ee/ci/cloud_services/aws/)
+* [https://docs.gitlab.com/ee/ci/variables/predefined_variables.html](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)
