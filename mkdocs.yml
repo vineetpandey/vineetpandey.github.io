@@ -7,7 +7,7 @@ nav:
   - Home: index.md
   - About: about.md
   - Tutorial:
-      - Securing GitLab CI/CD with AWS OIDC: "pages/tutorial/SecuringGitLabCICDwithAWSOIDC/SecuringGitLabCICDwithAWSOIDC.md"
+      - Securing AWS from GitLab CI with OIDC: "pages/tutorial/SecuringGitLabCICDwithAWSOIDC/SecuringGitLabCICDwithAWSOIDC.md"
   
 theme:
   name: material
