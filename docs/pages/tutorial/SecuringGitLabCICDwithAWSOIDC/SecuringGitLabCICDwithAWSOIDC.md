@@ -1,4 +1,4 @@
-# Securing GitLab CI/CD with AWS OIDC
+# Securing AWS from GitLab CI with OIDC
 
 
 ## Problem Statement -
