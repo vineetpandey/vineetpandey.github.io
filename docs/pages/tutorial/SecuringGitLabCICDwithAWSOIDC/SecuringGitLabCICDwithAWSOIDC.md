@@ -1,6 +1,5 @@
 # Securing GitLab CI/CD with AWS OIDC
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Problem Statement -
 
