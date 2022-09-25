@@ -7,10 +7,11 @@ nav:
   - Home: index.md
   - About: about.md
   - Tutorial:
-      - Tutorial Subsection: "pages/tutorial/tutorial_subsection.md"
+      - Securing GitLab CI/CD with AWS OIDC: "pages/tutorial/SecuringGitLabCICDwithAWSOIDC/SecuringGitLabCICDwithAWSOIDC.md"
   
 theme:
   name: material
+  
   palette: 
     primary: green
     scheme: default
@@ -26,7 +27,10 @@ theme:
     - navigation.tabs.sticky
 
 plugins:
-  - search 
+  - search
+  - glightbox
+  - tags:
+      tags_file: tags.md
     
 
 
@@ -35,11 +39,15 @@ extra_javascript:
 
 extra_css:
   - https://use.fontawesome.com/releases/v5.13.0/css/all.css
+  - stylesheets/extra.css
 
 
 # Document title
 
 markdown_extensions:
+  - def_list
+  - attr_list
+  - md_in_html
   - admonition
   - footnotes
   - pymdownx.details
